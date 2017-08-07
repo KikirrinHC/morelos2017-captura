@@ -42,7 +42,7 @@
 						<input type="password" placeholder="Contraseña" id="pass">
 						<i class="fa fa-key"></i>
 					</div>
-					<button id="cargar2" class="botonCargar" value="Cargar">Cargar</button>
+					<button id="cargar" class="botonCargar" value="Cargar">Cargar</button>
 					<button id="cargar3" class="botonCargar" value="Cargar">Mostrar</button>
 					<a href="index.html" class="botonIndex">Regresar al estudio</a>
 					<div id="spinner" style="text-align: center; margin-top: 15px; display: none;">
@@ -71,7 +71,7 @@
 					  if (err) throw err;
 						var respuesta=res;
 						var total=res.rows[0].conteo;
-						sqlite.query('Select * from Estudios', [], function(err, result) {
+						sqlite.query('Select idsqlite, estatus, idbd from Estudios', [], function(err, result) {
 						  if (err) throw err;
 						  
 							
