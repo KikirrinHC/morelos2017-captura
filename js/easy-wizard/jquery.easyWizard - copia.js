@@ -173,7 +173,7 @@
 				}else if ($("input[name='opiniongobernador']:checked").val() == "" || $("input[name='opiniongobernador']:checked").val() == undefined) {
 					navigator.notification.alert('Debe responder a la pregunta 8', "", 'Validación', 'OK');
 					$('#opiniongobernador1').focus();
-				} else if ($('#confianzagobernador').val()=="") {
+				} else if ($('#confianzagobernador').val()="") {
                     navigator.notification.alert('Debe responder a la pregunta 9', "", 'Validación', 'OK');
 					$('#confianzagobernador').focus();
 				}else if ($("input[name='satisfacciongraco']:checked").val() == "" || $("input[name='satisfacciongraco']:checked").val() == undefined) {
@@ -205,7 +205,7 @@
 				}else if ($("input[name='marihuana']:checked").val() == "" || $("input[name='marihuana']:checked").val() == undefined) {
 					navigator.notification.alert('Debe responder a la pregunta 16', "", 'Validación', 'OK');
 					$('#marihuana1').focus();
-				} else if ($('#confianzaobispo').val()=="") {
+				} else if ($('#confianzaobispo').val()="") {
                     navigator.notification.alert('Debe responder a la pregunta 17', "", 'Validación', 'OK');
 					$('#confianzaobispo').focus();
 				
@@ -393,13 +393,44 @@
 					
 					
 				}else if ($("input[name='socavon']:checked").val() == "" || $("input[name='socavon']:checked").val() == undefined) {
-					navigator.notification.alert('Debe responder a la pregunta 52', "", 'Validación', 'OK');
+					navigator.notification.alert('Debe responder a la pregunta 53', "", 'Validación', 'OK');
 					$('#socavon1').focus();
 				}else{
 					puedeseguir=true;
 				}
 			
+			}else if(pasoactivo==8){
+				
+				if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else if ($("input[name='']:checked").val() == "" || $("input[name='']:checked").val() == undefined) {
+					navigator.notification.alert('Debe responder a la pregunta ', "", 'Validación', 'OK');
+					$('#1').focus();
+				}else{
+					puedeseguir=true;
+				}
+			
 			}
+			
 			
 			
 			if(puedeseguir){

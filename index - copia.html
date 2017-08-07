@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ETP Soluciones</title>
+		<meta name="description" content="Cloud Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Bootstrap, Light weight Admin Dashboard,Light weight, Light weight Admin, Light weight Dashboard" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="css/animate.css" rel="stylesheet" media="screen">
+
+		<!-- date range -->
+		<link rel="stylesheet" type="text/css" href="css/daterange.css">
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen">
+
+		<!-- Slidebar CSS -->
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+
+		<!-- Easy Wizard -->
+		<link href="css/easy-wizard/jquery.snippet.min.css" rel="stylesheet">
+		<link href="css/easy-wizard/styles.css" rel="stylesheet" media="screen">
+
+		<!-- Font Awesome -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Slider by eyecon -->
+		<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+
+		<!-- Metrize Fonts -->
+		<link href="fonts/metrize.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="css/myclass.css" rel="stylesheet">
+	</head>  
+
+	<body onload="onLoad()">
+
+		<!-- Left sidebar start -->
+		<aside id="sidebar">
+
+			<!-- alerto starts -->
+			<a href="#" class="alerto">
+				<img src="img/icon.png" alt="alerto">
+			</a>
+			<!-- alerto ends -->
+<!-- Menu start -->
+			<div id='menu'>
+				<ul>
+					
+					<li class='highlight active'>
+						<a href='index.html'>
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Encuesta</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Carga de información</span>
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<!-- Menu End -->
+		</aside>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper">
+
+			<!-- Header start -->
+			<header>
+				
+				<div class="pull-right">
+					<ul id="mini-nav" class="clearfix">
+						<li class="list-box hidden-xs dropdown">
+							<a id="drop1" href="#" role="button" class="dropdown-toggle current-user" data-toggle="dropdown">
+								Alberto <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu sm fadeInUp animated messages">
+								<li class="dropdown-content">
+									<a href="#">Cambiar contraseña</a>
+									<a href="alertin.html">alertout</a>
+								</li>
+							</ul>
+						</li>
+						<li class="list-box hidden-lg hidden-md hidden-sm" id="mob-nav">
+							<a href="#">
+								<i class="fa fa-reorder"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- Header ends -->
+
+		
+			<!-- Main Container Start -->
+			<div class="main-container survey">
+
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="page-title">
+						<h4><div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>ESTUDIO DE TENDENCIAS DE OPINIÓN CIUDADANA.</h4>
+					</div>
+					
+				</div>
+				<!-- Top Bar Ends -->
+
+				<!-- Container fluid Starts -->
+				<div class="container-fluid">
+
+					<!-- Spacer starts -->
+					<div class="spacer-xs">
+
+						
+						<!-- Row start -->
+						<div class="row no-gutter">
+							<div class="col-md-12 col-xs-12" style="padding-left: 15px;padding-right: 15px;">
+							
+										<form id="myWizard" class="form">
+											
+											<section class="step" data-step-title="Criminalidad y cifra negra">
+											
+												<div class="form-group no-gutter">
+													<label class="control-label" for="inseguridad">50.¿Con cuál de éstas frases está usted más de acuerdo?<br>La actual situación de inseguridad que vive el Estado se deriva porque:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="inseguridad1" name="inseguridad" value="Los Jueces del Poder Judicial dejan salir a los delincuentes">Los Jueces del Poder Judicial dejan salir a los delincuentes</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad2" name="inseguridad" value="El Ministerio Público no integra bien los casos de quienes atrapa">El Ministerio Público no integra bien los casos de quienes atrapa</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad3" name="inseguridad" value="La Policía no hace su trabajo">La Policía no hace su trabajo</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad4" name="inseguridad" value="El Gobierno del Estado no tiene mano dura">El Gobierno del Estado no tiene mano dura</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad5" name="inseguridad" value="El Gobierno Municipal no tiene mano dura">El Gobierno Municipal no tiene mano dura</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad6" name="inseguridad" value="La delincuencia organizada está mejor organizada que el gobierno">La delincuencia organizada está mejor organizada que el gobierno</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridad7" name="inseguridad" value="Las autoridades están coludidas con la delincuencia">Las autoridades están coludidas con la delincuencia</label>
+															<label class="btn btn-default"><input type="radio" id="inseguridadNSNC" name="inseguridad" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddeninseguridad" name="hiddeninseguridad">
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="victima">51.¿Usted o alguien de la familia que vive con usted, ha sido víctima de algún delito en los últimos 12 meses?, ¿Qué tipo de delito?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default" onclick="mostrar('divDelito');">
+																<input type="radio" id="victima1"  name="victima" value="Si">Si
+															</label>
+															<label class="btn btn-default" onclick="ocultar('divDelito');">
+																<input type="radio" id="victimaNSNC"  name="victima" value="No">No
+															</label>
+														</div>
+
+														<div class="" style="display: none;" id="divDelito">
+															<div>
+																<div class="btn-group-vertical" data-toggle="buttons" id="victimaGroup">
+																	<label class="btn btn-default"><input type="radio" id="victimaSi1" name="victimaSi" value="Robo de casa">Robo de casa</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi2" name="victimaSi" value="Robo de auto">Robo de auto</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi3" name="victimaSi" value="Robo de pertenencias">Robo de pertenencias</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi4" name="victimaSi" value="Asalto">Asalto (con violencia)</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi5" name="victimaSi" value="Cobro de piso">Cobro de piso</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi6" name="victimaSi" value="Secuestro">Secuestro</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi7" name="victimaSi" value="Secuestro Express">Secuestro Express</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi8" name="victimaSi" value="Levantón">Levantón</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi9" name="victimaSi" value="Homicidio">Homicidio</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi10" name="victimaSi" value="Extorsión Telefónica">Extorsión Telefónica</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi11" name="victimaSi" value="Extorsión personal">Extorsión personal</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi12" name="victimaSi" value="Extorsión en redes sociales">Extorsión en redes sociales</label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi13" name="victimaSi" value="Violación"></label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSi14" name="victimaSi" value="Engaño telefónico"></label>
+																	<label class="btn btn-default"><input type="radio" id="victimaSiNSNC" name="victimaSi" value="N.S. - N.C.">N.S. - N.C.</label>
+																</div>
+															</div>
+															<input type="hidden" value="" id="hiddenvictimaSi" name="hiddenvictimaSi">	
+															<div class="form-group no-gutter">
+																<label class="control-label" for="delitootro">Otro:</label>
+																<div class="input-group">
+																	<input class="form-control" autocomplete="off" type="text" name="delitootro" id="delitootro" value="" >
+																	<span class="input-group-btn">
+																		<button type="button" class="btn btn-default" id="delitootroNC" >N.C.</button>
+																	</span>
+																</div>
+															</div>
+															
+															<div class="form-group no-gutter">
+																<label class="control-label" for="generovictima">51.1. ¿La víctima es Hombre o Mujer?</label>
+																<div>
+																	<div class="btn-group" data-toggle="buttons">
+																		<label class="btn btn-default"><input type="radio" id="generovictima1" name="generovictima" value="Hombre">Hombre</label>
+																		<label class="btn btn-default"><input type="radio" id="generovictima2" name="generovictima" value="Mujer">Mujer</label>
+																		<label class="btn btn-default"><input type="radio" id="generovictimaNSNC" name="generovictima" value="N.S. - N.C.">N.S. - N.C.</label>
+																	</div>
+																</div>
+																<input type="hidden" value="" id="hiddengenerovictima" name="hiddengenerovictima">
+															</div>
+															
+															<div class="form-group no-gutter">
+																<label class="control-label" for="edadvictima">51.2. ¿Qué edad tiene la víctima?</label>
+																<div class="input-group">
+																	<input class="form-control" autocomplete="off" type="text" name="edadvictima" id="edadvictima" value="" >
+																	<span class="input-group-btn">
+																		<button type="button" class="btn btn-default" id="edadvictimaNC" >N.C.</button>
+																	</span>
+																</div>
+															</div>
+															
+															<div class="form-group no-gutter">
+																<label class="control-label" for="ocupacionvictima">51.3. ¿Ocupación de la víctima?</label>
+																<div class="input-group">
+																	<input class="form-control" autocomplete="off" type="text" name="ocupacionvictima" id="ocupacionvictima" value="" >
+																	<span class="input-group-btn">
+																		<button type="button" class="btn btn-default" id="ocupacionvictimaNC" >N.C.</button>
+																	</span>
+																</div>
+															</div>
+															
+															
+															<div class="form-group no-gutter">
+																<label class="control-label" for="denuncia">51.4. ¿Denunció el hecho?</label>
+																<div>
+																	<div class="btn-group" data-toggle="buttons">
+																		<label class="btn btn-default"><input type="radio" id="denuncia1" name="denuncia" value="Si">Si</label>
+																		<label class="btn btn-default"><input type="radio" id="denuncia2" name="denuncia" value="No">No</label>
+																		<label class="btn btn-default"><input type="radio" id="denunciaNSNC" name="denuncia" value="N.S. - N.C.">N.S. - N.C.</label>
+																	</div>
+																</div>
+																<input type="hidden" value="" id="hiddendenuncia" name="hiddendenuncia">
+															</div>
+															
+															
+														</div>
+														<input type="hidden" value="" id="hiddenvictima" name="hiddenvictima">
+														<input type="hidden" value="" id="hiddenvictimaAcumulado" name="hiddenvictimaAcumulado">
+													</div>
+												</div>
+										
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="socavon">52.¿El socavón en el Paso Express de Cuernavaca es principalmente responsabilidad de:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="socavon1" name="socavon" value="El gobierno Municipal">El gobierno Municipal</label>
+															<label class="btn btn-default"><input type="radio" id="socavon2" name="socavon" value="El gobierno del Estado">El gobierno del Estado</label>
+															<label class="btn btn-default"><input type="radio" id="socavon3" name="socavon" value="El gobierno Federal">El gobierno Federal</label>
+															<label class="btn btn-default"><input type="radio" id="socavon4" name="socavon" value="De la constructora">De la constructora</label>
+															<label class="btn btn-default"><input type="radio" id="socavonNSNC" name="socavon" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddensocavon" name="hiddensocavon">
+												</div>
+											
+											</section>
+											<section class="step" data-step-title="Perfil">
+											
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="ocupacionencuestado">53.¿Cuál es su ocupación?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado1" name="ocupacionencuestado" value="Ama Casa">Ama Casa</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado2" name="ocupacionencuestado" value="Comerciante">Comerciante</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado3" name="ocupacionencuestado" value="Oficio">Oficio</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado4" name="ocupacionencuestado" value="Empresario">Empresario</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado5" name="ocupacionencuestado" value="Empleado">Empleado</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado6" name="ocupacionencuestado" value="Profesionista">Profesionista</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado7" name="ocupacionencuestado" value="Profesor">Profesor</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado8" name="ocupacionencuestado" value="Estudiante">Estudiante</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado9" name="ocupacionencuestado" value="Obrero">Obrero</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado10" name="ocupacionencuestado" value="Jubilado">Jubilado</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestado11" name="ocupacionencuestado" value="Desempleado">Desempleado</label>
+															<label class="btn btn-default"><input type="radio" id="ocupacionencuestadoNSNC" name="ocupacionencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenocupacionencuestado" name="hiddenocupacionencuestado">
+												</div>
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="ingresosencuestado">53.1 ¿Cuál es su ingreso promedio mensual?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado1" name="ingresosencuestado" value="0 y 2K">0 y 2K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado2" name="ingresosencuestado" value="3K y 5K">3K y 5K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado3" name="ingresosencuestado" value="6K y 12K">6K y 12K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado4" name="ingresosencuestado" value="13K y 21K">13K y 21K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado5" name="ingresosencuestado" value="22K y 31K">22K y 31K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado6" name="ingresosencuestado" value="32K y 41K">32K y 41K</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestado7" name="ingresosencuestado" value="42K +">42K +</label>
+															<label class="btn btn-default"><input type="radio" id="ingresosencuestadoNSNC" name="ingresosencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddeningresosencuestado" name="hiddeningresosencuestado">
+												</div>
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="estudiosencuestado">54. ¿Cuál es su nivel máximo de estudios?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado1" name="estudiosencuestado" value="Primaria">Primaria</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado2" name="estudiosencuestado" value="Secundaria">Secundaria</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado3" name="estudiosencuestado" value="Bachillerato">Bachillerato</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado4" name="estudiosencuestado" value="Universidad">Universidad</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado5" name="estudiosencuestado" value="Superior a Universidad">Superior a Universidad</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestado6" name="estudiosencuestado" value="Sin estudios">Sin estudios</label>
+															<label class="btn btn-default"><input type="radio" id="estudiosencuestadoNSNC" name="estudiosencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenestudiosencuestado" name="hiddenestudiosencuestado">
+												</div>
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="edadencuestado">54.1 Por último, ¿Cuál es su edad?</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default"><input type="radio" id="edadencuestado1" name="edadencuestado" value="18 a 29">18 a 29</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado2" name="edadencuestado" value="30 a 39">30 a 39</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado3" name="edadencuestado" value="40 a 49">40 a 49</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado4" name="edadencuestado" value="50 a 59">50 a 59</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado5" name="edadencuestado" value="60 a 69">60 a 69</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado6" name="edadencuestado" value="70 a 79">70 a 79</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestado7" name="edadencuestado" value="+ 80">+ 80</label>
+															<label class="btn btn-default"><input type="radio" id="edadencuestadoNSNC" name="edadencuestado" value="N.S. - N.C.">N.S. - N.C.</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddenedadencuestado" name="hiddenedadencuestado">
+												</div>
+												
+												<div class="form-group no-gutter">
+													<label class="control-label" for="municipioEncuestado">Municipio</label>
+													<div>
+														<select name="municipioEncuestado" id="municipioEncuestado" class="form-control">
+															<option data-placeholder="true" value="0" >Municipio</option>
+															<?php for ($i = 0; $i < sizeof($Municipios); $i++) { ?>
+																<option value="<?php echo $Municipios[$i]['id'] ?>" <?php if ($Municipios[$i]['id'] == 7) echo "selected"; ?>><?php echo $Municipios[$i]['Nombre'] ?></option>
+															<?php } ?>
+																<option data-placeholder="true" value="100" >Sin especificar</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="coloniaEncuestado">Colonia</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="coloniaEncuestado" id="coloniaEncuestado" value="" >
+														<button type="button" class="btn btn-default" id="coloniaCentro" >Centro</button>
+														<button type="button" class="btn btn-default" id="coloniaNC" >N.C.</button>
+													</div>
+												</div>
+												<div class="form-group no-gutter">
+													<label class="control-label" for="seccionEncuestado">Sección</label>
+													<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="seccionEncuestado" id="seccionEncuestado" value="" >
+														<button type="button" class="btn btn-default" id="seccionNC" >N.C.</button>
+													</div>
+												</div>
+											
+											
+												<div class="form-group no-gutter">
+													<label class="control-label" for="encuestador">Encuestador</label>
+													<div>
+														<select name="encuestador" id="encuestador" class="form-control" title="Encuestador obligatorio!" required >
+															<option data-placeholder="true" value="0" >Encuestador</option>
+															<?php for ($i = 0; $i < sizeof($Usuarios); $i++) { ?>
+																<option value="<?php echo $Usuarios[$i]['id'] ?>"><?php echo $Usuarios[$i]['nombre'] ?></option>
+															<?php } ?>
+															<option data-placeholder="true" value="Sin especificar" >Sin especificar</option>
+														</select>
+													</div>
+												</div>
+												
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="generoEncuestado">Género:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default">
+																<input type="radio"  id="hombre" name="generoEncuestado" value="Masculino">Masculino
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="mujer" name="generoEncuestado" value="Femenino">Femenino
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="generoNC" name="generoEncuestado" value="N.C.">N.C.
+															</label>
+															</div>
+													</div>
+													<input type="hidden" value="" id="hiddengeneroEncuestado" name="hiddengeneroEncuestado">
+												</div>
+												
+												
+												<div class="form-group no-gutter">
+													<label class="control-label col-md-2" for="nseEncuestado">N.S.E.:</label>
+													<div>
+														<div class="btn-group" data-toggle="buttons">
+															<label class="btn btn-default">
+																<input type="radio" id="bajo" name="nseEncuestado" value="Bajo">Bajo
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="medio" name="nseEncuestado" value="Medio">Medio
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="alto" name="nseEncuestado" value="Alto">Alto
+															</label>
+															<label class="btn btn-default">
+																<input type="radio" id="nseNC" name="nseEncuestado" value="N.C.">N.C.
+															</label>
+														</div>
+													</div>
+													<input type="hidden" value="" id="hiddennseEncuestado" name="hiddennseEncuestado">
+												</div>
+											</section>
+										</form>
+									
+							</div>
+						</div>
+						<!-- Row end -->
+
+					
+					</div>
+					<!-- Spacer ends -->
+
+				</div>
+				<!-- Container fluid ends -->
+
+			</div>
+			<!-- Main Container Start -->
+
+			<!-- Footer Start -->
+			<footer>
+				Copyright Estrategia, Tecnoalertía y Procesos S.C.<span> 2017 </span>. All Rights Reserved.
+			</footer>
+			<!-- Footer end -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+		<!-- Animated Right Sidebar -->
+		<script src="js/slidebars.js"></script>
+
+		<!-- Date Range -->
+		<script src="js/daterange/moment.js"></script>
+		<script src="js/daterange/daterangepicker.js"></script>
+
+		<!-- Custom Js -->
+		<script src="js/wizard/bwizard.js"></script>
+		
+		<!-- Easy Wizard -->
+		<script src="js/easy-wizard/jquery.snippet.min.js"></script>
+		<script src="js/easy-wizard/jquery.easyWizard.js"></script>
+		<script src="js/easy-wizard/scripts.js"></script>
+<!-- Slider by Eyecon-->
+		<script src="js/bootstrap-slider.min.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+		<script src="js/myjs.js"></script>
+		<script type="text/javascript">
+		function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// device APIs are available
+//
+function onDeviceReady() {
+  var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+  var sqlite = new SQLite('example');
+  sqlite.open(function(err) {
+    alert('Connection opened');
+    if (err) throw err;
+	sqlite.query('CREATE TABLE IF NOT EXISTS DemoTable (name, score)', function(err, res) {
+      if (err) throw err;
+     // alert(JSON.stringify(res));
+    });
+	sqlite.query('INSERT INTO DemoTable VALUES (?,?)', ['Alice', 101], function(err, res) {
+      if (err) throw err;
+     // alert(JSON.stringify(res));
+    });
+	sqlite.query('INSERT INTO DemoTable VALUES (?,?)', ['Alicd', 102], function(err, res) {
+      if (err) throw err;
+     // alert(JSON.stringify(res));
+    });
+	sqlite.query('Select count(score) from DemoTable as contador', [], function(err, res) {
+      if (err) throw err;
+      alert(JSON.stringify(res));
+	  // alert(res.rows[0].contador);
+		sqlite.close(function(err) {
+        if (err) throw err;
+        alert('Connection closed');
+       /* SQLite.deleteDatabase('example', function(err) {
+          if (err) throw err;
+          alert('Database deleted');
+        });
+		*/
+      });
+    });
+	
+  });
+}
+		
+		
+		//Wizard
+		$("#wizard").bwizard();
+
+			$("#confianzagobernador").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+		$("#confianzaobispo").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+
+
+		$("#myWizard").on("click", "#coloniaCentro", function(event) {
+                                                $("#coloniaEncuestado").val('Centro');
+                                            });
+                                            $("#myWizard").on("click", "#coloniaNC", function(event) {
+                                                $("#coloniaEncuestado").val('Sin especificar');
+                                            });
+
+                                            $("#myWizard").on("click", "#seccionNC", function(event) {
+                                                $("#seccionEncuestado").val('Sin especificar');
+                                            });
+
+                                            $("#myWizard").on("click", "#noticiasNC", function(event) {
+                                                $("#noticiasCual").val('Sin especificar');
+                                            });
+											
+											
+		$("#myWizard").on("submit", function(event) {
+											
+            event.preventDefault();
+            $('#messages').html("");
+            $('#coloniaEncuestado').val($.trim($('#coloniaEncuestado').val()));
+            $('#seccionEncuestado').val($.trim($('#seccionEncuestado').val()));
+			if ($('#seccionEncuestado').val().length < 3) {
+                alert("debe ingresar una sección válida");
+                $('#seccionEncuestado').focus();
+			} else {
+			
+				alert("salebye");
+
+            }
+        });
+		</script>
+	</body>
+</html>

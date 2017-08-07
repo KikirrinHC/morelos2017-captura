@@ -2,6 +2,14 @@
 min-height: 620px;
 }
 
+.top-bar {
+    height: auto;
+    background: #e3fbe4;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
 header {
   height: 60px;
   line-height: 60px;
@@ -17,9 +25,7 @@ header {
  .btn-default:hover {
     color: #555;
 	font-weight: bold;
-    background-color: #eeeee3;
-    border: 1px solid #eeeee3; }
-
+   }
 	.panel-heading {
     position: relative;
     padding: 12px 15px;
@@ -31,6 +37,43 @@ header {
     -moz-border-radius: 0px;
     border-radius: 0px;
 }
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 6px 15px; }
+
+.btn-info {
+  background-color: #4e9d4e;
+  border-color: #4e9d4e;
+  color: white; }
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info:active:hover , .btn-info:active:focus,.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover{
+    color: white;
+    background-color: #3ff412;
+    border: 1px solid #3ff412; }
 
 .panel {
     margin-bottom: 20px;
@@ -53,7 +96,11 @@ footer {
     width: 100%;
     padding: 0 20px;
 }
-
+.btn-default.active,.btn-default.active:hover, .btn-default:active, .btn-default:focus {
+    color: #333;
+    background-color: #ffb5b5;
+    border-color: #da5858;
+	}
 
 
 aside#sidebar {

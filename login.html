@@ -48,4 +48,21 @@
 			</div>
 		</form>
 	</body>
+		<script src="js/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+	<script>
+	
+	$("#wrapper").on("submit",function(event){
+		
+		alert("hello");
+		var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+	 alert("hello");
+		var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+		var sqlite = new SQLite('estudiotendencias');
+				SQLite.deleteDatabase('estudiotendencias', function(err) {
+		  if (err) throw err;
+		});
+	  alert("bye");
+	});
+	</script>
 </html>

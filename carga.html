@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ETP Soluciones</title>
+		
+		<!-- Slidebar CSS -->
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+
+		<!-- Error CSS -->
+		<link href="css/login.css" rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="css/animate.css" rel="stylesheet" media="screen">
+
+		<!-- Font Awesome -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+<!-- Spinner CSS -->
+		<link href="css/spinner.css" rel="stylesheet" media="screen">
+
+
+		</head>
+<body style="background: #fff">
+
+	
+
+
+			<div id="box" class="animated bounceIn">
+				<div id="top_header">
+					
+					<h5>
+						Debe registrarse para cargar<br>la información.
+					</h5>
+				</div>
+				<div id="inputs">
+					<div class="form-control">
+						<input type="text" placeholder="Usuario" id="usr">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="form-control">
+						<input type="password" placeholder="Contraseña" id="pass">
+						<i class="fa fa-key"></i>
+					</div>
+					<button id="cargar2" class="botonCargar" value="Cargar">Cargar</button>
+					<button id="cargar3" class="botonCargar" value="Cargar">Mostrar</button>
+					<a href="index.html" class="botonIndex">Regresar al estudio</a>
+					<div id="spinner" style="text-align: center; margin-top: 15px; display: none;">
+							<div class="three-quarters-loader text-center" >
+							  Guardando
+							</div>
+						</div>
+					<div id="resultado" style="color:#000"></div>
+				</div>
+				
+			</div>
+			
+			
+	</body>
+	<script src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+	<script>
+	$("#cargar3").on("click",function(event){
+	$("#resultado").html("vacío");
+		var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+		var sqlite = new SQLite('tendenciasmorelosbd2');
+		sqlite.open(function(err) {
+		//alert('Connection opened');
+		if (err) throw err;
+		sqlite.query('Select count(idsqlite) as conteo from Estudios', [], function(err, res) {
+					  if (err) throw err;
+						var respuesta=res;
+						var total=res.rows[0].conteo;
+						sqlite.query('Select * from Estudios', [], function(err, result) {
+						  if (err) throw err;
+						  
+							
+	
+							$("#resultado").html("Total: "+total+"<br><br>"+JSON.stringify(result));
+							//alert(JSON.stringify(res));
+							sqlite.close(function(err) {
+							if (err) throw err;
+							//alert('Connection closed');
+						  });
+						});
+					});
+	});
+	
+		});
+	
+	
+	$("#cargar2").on("click",function(event){
+		
+		 var datos={"rows":[{"idsqlite":1,"idbd":0,"geo":"18.8465933,-99.232434","estatus":"registered","noticias":"N.S. - N.C.","noticiasCual":"","libertadeleccion":"N.S. - N.C.","familia":"N.S. - N.C.","futbol":"N.S. - N.C.","orgullomorelense":"N.S. - N.C.","identidadmorelense":"N.S. - N.C.","evaluaciongobierno":"N.S. - N.C.","opiniongobernador":"N.S. - N.C.","confianzagobernador":"5","satisfacciongraco":"N.S. - N.C.","caracteristicasp":"N.S. - N.C.","caracteristicasn":"N.S. - N.C.","capacidad":"N.S. - N.C.","votocuauhtemoc":"N.S. - N.C.","matrimonios":"N.S. - N.C.","sociedadmorelense":"N.S. - N.C.","marihuana":"N.S. - N.C.","confianzaobispo":"5","problemacomunidad":"N.S. - N.C.","partidorepresenta":"N.S. - N.C.","partidonovotaria":"N.S. - N.C.","caracteristicaspri":"N.S. - N.C.","caracteristicaspan":"N.S. - N.C.","caracteristicasprd":"N.S. - N.C.","caracteristicasverde":"N.S. - N.C.","caracteristicasmorena":"N.S. - N.C.","caracteristicasmovimiento":"N.S. - N.C.","caracteristicaspes":"N.S. - N.C.","sentirpan":"Sin respuesta","sentirpri":"Sin respuesta","sentirprd":"Sin respuesta","sentirverde":"Sin respuesta","sentirmorena":"Sin respuesta","sentirmovimiento":"Sin respuesta","sentirpes":"Sin respuesta","partidohonesto":"N.S. - N.C.","partidodeshonesto":"N.S. - N.C.","partidomenteabierta":"N.S. - N.C.","partidomentecerrada":"N.S. - N.C.","partidotrabajador":"N.S. - N.C.","partidoflojo":"N.S. - N.C.","partidointeligente":"N.S. - N.C.","partidoignorante":"N.S. - N.C.","partidoutil":"N.S. - N.C.","partidoinutil":"N.S. - N.C.","partidopreparado":"N.S. - N.C.","partidomejoresresultados":"N.S. - N.C.","alianzasfuncionan":"N.S. - N.C.","alianzapreferencia":"N.S. - N.C.","reconoceAVJ":"1","reconoceJBA":"","reconoceMQM":"","reconoceRSS":"","reconoceMMG":"1","reconoceJAC":"","reconoceMVS":"1","reconoceCBB":"","reconoceRGC":"1","reconoceLMG":"","opinionAVJ":"No contestó","opinionJBA":"No contestó","opinionMQM":"No contestó","opinionRSS":"No contestó","opinionMMG":"No contestó","opinionJAC":"No contestó","opinionMVS":"No contestó","opinionCBB":"No contestó","opinionRGC":"No contestó","opinionLMG":"No contestó","inseguridad":"N.S. - N.C.","victima":"Si","delitoRobocasa":"1","delitoRoboauto":"","delitoRobopertenencias":"1","delitoAsalto":"","delitoCobrodepiso":"1","delitoSecuestro":"","delitoSecuestroexpress":"","delitoLevanton":"","delitoHomicidio":"","delitoExtorsiontelefonica":"","delitoExtorsionpersonal":"","delitoExtorsionredes":"","delitoViolacion":"","delitoEnganotelefonico":"","denuncia":"N.S. - N.C.","generovictima":"N.S. - N.C.","edadvictima":"Sin especificar","ocupacionvictima":"Sin especificar","socavon":"N.S. - N.C.","ocupacionencuestado":"N.S. - N.C.","ingresosencuestado":"N.S. - N.C.","estudiosencuestado":"N.S. - N.C.","edadencuestado":"N.S. - N.C.","generoEncuestado":"N.C.","nseEncuestado":"N.C.","municipioEncuestado":"Axochiapan","coloniaEncuestado":"Sin especificar","seccion":"Sin especificar"},{"idsqlite":2,"idbd":0,"geo":"18.8465703,-99.232434","estatus":"registered","noticias":"TV","noticiasCual":"Sin especificar","libertadeleccion":"Totalmente de acuerdo","familia":"Muy importante","futbol":"Muy importante","orgullomorelense":"Muy orgulloso","identidadmorelense":"Tradiciones","evaluaciongobierno":"Muy bueno","opiniongobernador":"Favorable","confianzagobernador":"5","satisfacciongraco":"Muy satisfecho","caracteristicasp":"Fuerte","caracteristicasn":"Débil","capacidad":"GRA","votocuauhtemoc":"Si","matrimonios":"Si","sociedadmorelense":"Si","marihuana":"Si","confianzaobispo":"5","problemacomunidad":"Agua Potable","partidorepresenta":"PAN","partidonovotaria":"PAN","caracteristicaspri":"Trabajador","caracteristicaspan":"Trabajador","caracteristicasprd":"Trabajador","caracteristicasverde":"Trabajador","caracteristicasmorena":"Trabajador","caracteristicasmovimiento":"Trabajador","caracteristicaspes":"Trabajador","sentirpan":"Esperanzado","sentirpri":"Esperanzado","sentirprd":"Esperanzado","sentirverde":"Esperanzado","sentirmorena":"Esperanzado","sentirmovimiento":"Esperanzado","sentirpes":"Esperanzado","partidohonesto":"PAN","partidodeshonesto":"PAN","partidomenteabierta":"PAN","partidomentecerrada":"PAN","partidotrabajador":"PAN","partidoflojo":"PAN","partidointeligente":"PAN","partidoignorante":"PAN","partidoutil":"PAN","partidoinutil":"PAN","partidopreparado":"PAN","partidomejoresresultados":"PAN","alianzasfuncionan":"Si","alianzapreferencia":"Que vayan juntos para sumar votos","reconoceAVJ":"1","reconoceJBA":"","reconoceMQM":"","reconoceRSS":"","reconoceMMG":"1","reconoceJAC":"","reconoceMVS":"1","reconoceCBB":"","reconoceRGC":"","reconoceLMG":"","opinionAVJ":"Regular","opinionJBA":"Regular","opinionMQM":"Regular","opinionRSS":"Regular","opinionMMG":"Regular","opinionJAC":"Regular","opinionMVS":"Regular","opinionCBB":"Regular","opinionRGC":"Regular","opinionLMG":"Regular","inseguridad":"Los Jueces del Poder Judicial dejan salir a los delincuentes","victima":"Si","delitoRobocasa":"","delitoRoboauto":"","delitoRobopertenencias":"","delitoAsalto":"1","delitoCobrodepiso":"","delitoSecuestro":"1","delitoSecuestroexpress":"","delitoLevanton":"","delitoHomicidio":"","delitoExtorsiontelefonica":"","delitoExtorsionpersonal":"1","delitoExtorsionredes":"","delitoViolacion":"","delitoEnganotelefonico":"","denuncia":"N.S. - N.C.","generovictima":"Mujer","edadvictima":"Sin especificar","ocupacionvictima":"Sin especificar","socavon":"El gobierno del Estado","ocupacionencuestado":"Ama Casa","ingresosencuestado":"0 y 2K","estudiosencuestado":"Primaria","edadencuestado":"18 a 29","generoEncuestado":"Masculino","nseEncuestado":"Bajo","municipioEncuestado":"Coatlán del Río","coloniaEncuestado":"Centro","seccion":"Sin especificar"},{"idsqlite":3,"idbd":0,"geo":"18.8465933,-99.232434","estatus":"registered","noticias":"N.S. - N.C.","noticiasCual":"","libertadeleccion":"N.S. - N.C.","familia":"N.S. - N.C.","futbol":"N.S. - N.C.","orgullomorelense":"N.S. - N.C.","identidadmorelense":"N.S. - N.C.","evaluaciongobierno":"N.S. - N.C.","opiniongobernador":"N.S. - N.C.","confianzagobernador":"5","satisfacciongraco":"N.S. - N.C.","caracteristicasp":"N.S. - N.C.","caracteristicasn":"N.S. - N.C.","capacidad":"N.S. - N.C.","votocuauhtemoc":"N.S. - N.C.","matrimonios":"N.S. - N.C.","sociedadmorelense":"N.S. - N.C.","marihuana":"N.S. - N.C.","confianzaobispo":"5","problemacomunidad":"N.S. - N.C.","partidorepresenta":"N.S. - N.C.","partidonovotaria":"N.S. - N.C.","caracteristicaspri":"N.S. - N.C.","caracteristicaspan":"N.S. - N.C.","caracteristicasprd":"N.S. - N.C.","caracteristicasverde":"N.S. - N.C.","caracteristicasmorena":"N.S. - N.C.","caracteristicasmovimiento":"N.S. - N.C.","caracteristicaspes":"N.S. - N.C.","sentirpan":"Sin respuesta","sentirpri":"Sin respuesta","sentirprd":"Sin respuesta","sentirverde":"Sin respuesta","sentirmorena":"Sin respuesta","sentirmovimiento":"Sin respuesta","sentirpes":"Sin respuesta","partidohonesto":"N.S. - N.C.","partidodeshonesto":"N.S. - N.C.","partidomenteabierta":"N.S. - N.C.","partidomentecerrada":"N.S. - N.C.","partidotrabajador":"N.S. - N.C.","partidoflojo":"N.S. - N.C.","partidointeligente":"N.S. - N.C.","partidoignorante":"N.S. - N.C.","partidoutil":"N.S. - N.C.","partidoinutil":"N.S. - N.C.","partidopreparado":"N.S. - N.C.","partidomejoresresultados":"N.S. - N.C.","alianzasfuncionan":"N.S. - N.C.","alianzapreferencia":"N.S. - N.C.","reconoceAVJ":"1","reconoceJBA":"","reconoceMQM":"","reconoceRSS":"","reconoceMMG":"1","reconoceJAC":"","reconoceMVS":"1","reconoceCBB":"","reconoceRGC":"1","reconoceLMG":"","opinionAVJ":"No contestó","opinionJBA":"No contestó","opinionMQM":"No contestó","opinionRSS":"No contestó","opinionMMG":"No contestó","opinionJAC":"No contestó","opinionMVS":"No contestó","opinionCBB":"No contestó","opinionRGC":"No contestó","opinionLMG":"No contestó","inseguridad":"N.S. - N.C.","victima":"Si","delitoRobocasa":"1","delitoRoboauto":"","delitoRobopertenencias":"1","delitoAsalto":"","delitoCobrodepiso":"1","delitoSecuestro":"","delitoSecuestroexpress":"","delitoLevanton":"","delitoHomicidio":"","delitoExtorsiontelefonica":"","delitoExtorsionpersonal":"","delitoExtorsionredes":"","delitoViolacion":"","delitoEnganotelefonico":"","denuncia":"N.S. - N.C.","generovictima":"N.S. - N.C.","edadvictima":"Sin especificar","ocupacionvictima":"Sin especificar","socavon":"N.S. - N.C.","ocupacionencuestado":"N.S. - N.C.","ingresosencuestado":"N.S. - N.C.","estudiosencuestado":"N.S. - N.C.","edadencuestado":"N.S. - N.C.","generoEncuestado":"N.C.","nseEncuestado":"N.C.","municipioEncuestado":"Axochiapan","coloniaEncuestado":"Sin especificar","seccion":"Sin especificar"}]};
+		 $.each(datos.rows, function( index, registro ) {
+													  
+													
+							
+	
+							$.ajax({
+											cache: false,
+											type: 'GET',
+											dataType: 'jsonp',
+											url: 'http://etpsoluciones.com.mx/sistemas/morelos2017/controlSurvey.php',
+											//contentType: 'multipart/form-data',
+											//processData: false,
+											data: {
+												accion: "save2",
+												user: $("#usr").val(),
+												pass: $("#pass").val(),
+												valores: JSON.stringify(registro)
+												
+											},
+											success: function(json) {
+												alert("envío ok");
+												if(json.validate){
+													
+														$("#resultado").append("ok local "+json.datos.sqlite+"="+json.datos.id);
+																									//navigator.notification.alert('Datos almacenados correctamente', "", 'Información', 'OK');
+													
+												}else{
+												alert("hubo un error con algo");
+													//navigator.notification.alert('Su usuario y/o contraseña son incorrectos', "", 'Validación', 'OK');
+												}
+												
+												
+											},
+											error: function(json) {
+												$("#resultado").html("Error: "+json);
+												alert("hubo un error");
+										}
+										});
+	  
+
+		
+	  });
+	  });
+	  
+	  $("#cargar").on("click",function(event){
+	
+	
+		
+	var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+		var sqlite = new SQLite('tendenciasmorelosbd2');
+		sqlite.open(function(err) {
+		//alert('Connection opened');
+		if (err) throw err;
+		sqlite.query('Select count(idsqlite) as conteo from Estudios', [], function(err, res) {
+					  if (err) throw err;
+						var respuesta=res;
+						var total=res.rows[0].conteo;
+						sqlite.query('Select * from Estudios where estatus=?', ["registered"], function(err, result) {
+						  if (err) throw err;
+					$.each(datos.rows, function( index, registro ) {
+			  
+							
+							$.ajax({
+											cache: false,
+											type: 'GET',
+											dataType: 'jsonp',
+											url: 'http://etpsoluciones.com.mx/sistemas/morelos2017/controlSurvey.php',
+											//contentType: 'multipart/form-data',
+											//processData: false,
+											data: {
+												accion: "save2",
+												user: $("#usr").val(),
+												pass: $("#pass").val(),
+												valores: JSON.stringify(registro)
+												
+											},
+											success: function(json) {
+												//alert("envío ok");
+												if(json.validate && json.datos.id!=""){
+													sqlite.open(function(err) {
+															//alert('Connection opened');
+															if (err) throw err;
+															sqlite.query('UPDATE Estudios set estatus=?, idbd='+json.datos.id+' where idsqlite='+json.datos.sqlite+'', ["transfered"], function(err, result) {
+																if (err) throw err;
+																
+															});
+														});
+													//	$("#resultado").append("ok local "+json.datos.sqlite+"="+json.datos.id);
+													navigator.notification.alert('Datos almacenados correctamente', "", 'Información', 'OK');
+													
+												}else{
+												//alert("hubo un error con algo");
+													navigator.notification.alert('Su usuario y/o contraseña son incorrectos', "", 'Validación', 'OK');
+												}
+												
+												
+											},
+											error: function(json) {
+												$("#resultado").html("Error: "+json);
+												alert("hubo un error");
+										}
+										});
+	  
+		});
+	});
+							//$("#resultado").html("Total: "+total+"<br><br>"+JSON.stringify(res));
+							//alert(JSON.stringify(res));
+							sqlite.close(function(err) {
+							if (err) throw err;
+							//alert('Connection closed');
+						  });
+						});
+					});
+	});
+	
+	
+	
+	
+	</script>
+</html>

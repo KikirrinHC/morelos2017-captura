@@ -16,14 +16,14 @@ body {
 	color: #fff;
 	height: 100%;
 	margin: 0;
-	background: #47759e; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #47759e 0%, #081F33 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#47759e), color-stop(100%,#081F33)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #47759e 0%,#081F33 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #47759e 0%,#081F33 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #47759e 0%,#081F33 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #47759e 0%,#081F33 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47759e', endColorstr='#081F33',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #0c150f; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #0c150f 0%, #021005 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0c150f), color-stop(100%,#021005)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #0c150f 0%,#021005 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #0c150f 0%,#021005 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #0c150f 0%,#021005 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #0c150f 0%,#021005 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c150f', endColorstr='#021005',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -60,7 +60,7 @@ body {
 	margin: 0;
 	font-weight: 400;
 	padding: 15px 0;
-	color: #aaa;
+	color: #1f1f1f;
 }
 
 #inputs {
@@ -89,7 +89,7 @@ input[type=text], input[type=password] {
 }
 
 input[type=text]:hover, input[type=password]:hover {
-	border: thin solid #47759e;
+	border: thin solid #0c150f;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -102,11 +102,42 @@ input[type=text]:focus, input[type=password]:focus {
 	outline: none;
 }
 
-input[type=submit] {
+.botonIndex {
+	width: 270px;
+	height: 48px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 13px;
 	color: #fff;
 	font-size: 18px;
 	background-color: #fff;
-	background-color: #47759e;
+	background-color: #898e89;
+	border: 0;
+	transition: all .2s ease;
+	cursor: pointer;
+	padding: 10px;
+	
+    text-align: center;
+}
+
+.botonCargar {
+	width: 270px;
+	height: 48px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #fff;
+	background-color: #4e9d4e;
 	border: 0;
 	transition: all .2s ease;
 	cursor: pointer;
@@ -114,7 +145,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #47759e;
+	background-color: #4e9d4e;
 	color: #fff;
 }
 input[type=submit]:focus {

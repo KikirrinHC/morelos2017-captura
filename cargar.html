@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ETP Soluciones</title>
+		<meta name="description" content="Cloud Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Bootstrap, Light weight Admin Dashboard,Light weight, Light weight Admin, Light weight Dashboard" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="shortcut icon" href="img/favicon.ico">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="css/animate.css" rel="stylesheet" media="screen">
+
+		<!-- date range -->
+		<link rel="stylesheet" type="text/css" href="css/daterange.css">
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen">
+
+		<!-- Slidebar CSS -->
+		<link rel="stylesheet" type="text/css" href="css/slidebars.css">
+
+		<!-- Easy Wizard -->
+		<link href="css/easy-wizard/jquery.snippet.min.css" rel="stylesheet">
+		<link href="css/easy-wizard/styles.css" rel="stylesheet" media="screen">
+
+		<!-- Font Awesome -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Slider by eyecon -->
+		<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+
+		<!-- Metrize Fonts -->
+		<link href="fonts/metrize.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Error CSS -->
+		<link href="css/login.css" rel="stylesheet" media="screen">
+
+		
+
+		<link href="css/myclass.css" rel="stylesheet">
+	</head>  
+
+	<body onload="onLoad()">
+
+		<!-- Left sidebar start -->
+		<aside id="sidebar">
+
+			<!-- alerto starts -->
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			<!-- alerto ends -->
+<!-- Menu start -->
+			<div id='menu'>
+				<ul>
+					
+					<li class='highlight active'>
+						<a href='index.html'>
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Encuesta</span>
+						</a>
+					</li>
+					<li>
+						<a href='carga.html' >
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Carga de información</span>
+						</a>
+					</li>
+					<li class=''>
+						<a href='#' id="vaciar">
+							<div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>
+							<span>Vaciar</span>
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<!-- Menu End -->
+		</aside>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper">
+
+			<!-- Header start -->
+			<header>
+				
+				<div class="pull-right">
+					<ul id="mini-nav" class="clearfix">
+						<li class="list-box hidden-xs dropdown">
+							<a id="drop1" href="#" role="button" class="dropdown-toggle current-user" data-toggle="dropdown">
+								Alberto <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu sm fadeInUp animated messages">
+								<li class="dropdown-content">
+									<a href="#">Cambiar contraseña</a>
+									<a href="login.html">Salir</a>
+								</li>
+							</ul>
+						</li>
+						<li class="list-box hidden-lg hidden-md hidden-sm" id="mob-nav">
+							<a href="#">
+								<i class="fa fa-reorder"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- Header ends -->
+
+		
+			<!-- Main Container Start -->
+			<div class="main-container survey">
+
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="page-title">
+						<h4><div class="fs1" aria-hidden="true" data-icon="&#xe0ab;"></div>ESTUDIO DE TENDENCIAS DE OPINIÓN CIUDADANA.</h4>
+					</div>
+					
+				</div>
+				<!-- Top Bar Ends -->
+
+				
+					<h5>
+						Debe registrarse para cargar<br>la información.
+					</h5>
+				
+					
+				<div class="form-group no-gutter">
+					<label class="control-label" for="seccionEncuestado">Usuario:</label>
+						<div class="col-md-10 form-inline">
+														<input class="form-control"  autocomplete="off" type="text" name="seccionEncuestado" id="seccionEncuestado" value="" >
+														</div>
+												</div>
+												<button id="cargar" class="botonCargar" value="Cargar">Cargar</button>
+					<div id="resultado" style="color:#000"></div>
+				
+			</div>
+			</div>
+			<!-- Main Container Start -->
+
+			<!-- Footer Start -->
+			<footer>
+				Copyright Estrategia, Tecnología y Procesos S.C.<span> 2017 </span>. All Rights Reserved.
+			</footer>
+			<!-- Footer end -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
+		<!-- Animated Right Sidebar -->
+		<script src="js/slidebars.js"></script>
+
+		<!-- Date Range -->
+		<script src="js/daterange/moment.js"></script>
+		<script src="js/daterange/daterangepicker.js"></script>
+
+		<!-- Custom Js -->
+		<script src="js/wizard/bwizard.js"></script>
+		
+		<!-- Easy Wizard -->
+		<script src="js/easy-wizard/jquery.snippet.min.js"></script>
+		<script src="js/easy-wizard/jquery.easyWizard.js"></script>
+		<script src="js/easy-wizard/scripts.js"></script>
+<!-- Slider by Eyecon-->
+		<script src="js/bootstrap-slider.min.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+		<script src="js/myjs.js"></script>
+		<script type="text/javascript">
+		function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			//alert(navigator.notification);
+		}
+}
+
+// device APIs are available
+//
+function onSubmit1() {
+  var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+  var sqlite = new SQLite('estudiotendencias');
+  sqlite.open(function(err) {
+    //alert('Connection opened');
+    if (err) throw err;
+	sqlite.query('CREATE TABLE IF NOT EXISTS Estudios (inseguridad, victima, socavon, estatus, idbd)', function(err, res) {
+      if (err) throw err;
+     // alert(JSON.stringify(res));
+    });
+	sqlite.query('INSERT INTO Estudios VALUES (?,?, ?, ?, ?)', ['Alice', 101], function(err, res) {
+      if (err) throw err;
+     // alert(JSON.stringify(res));
+    });
+	
+	sqlite.query('Select count(idbd) from Estudios', [], function(err, res) {
+      if (err) throw err;
+      alert(JSON.stringify(res));
+		sqlite.close(function(err) {
+        if (err) throw err;
+        alert('Connection closed');
+      });
+    });
+  });
+}
+
+$("#vaciar").on("click", function(evt){
+evt.preventDefault();
+alert("borrar");
+	var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+	SQLite.deleteDatabase('estudiotendencias', function(err) {
+	  if (err) throw err;
+	  alert("borrado");
+	  
+	});
+});
+		
+		
+		//Wizard
+		$("#wizard").bwizard();
+
+			$("#confianzagobernador").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+		$("#confianzaobispo").slider({
+    ticks: [1,2,3,4,5,6,7,8,9,10],
+    ticks_labels: ["1","2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    ticks_snap_bounds: 1
+});
+
+
+		$("#myWizard").on("click", "#coloniaCentro", function(event) {
+                                                $("#coloniaEncuestado").val('Centro');
+                                            });
+                                            $("#myWizard").on("click", "#coloniaNC", function(event) {
+                                                $("#coloniaEncuestado").val('Sin especificar');
+                                            });
+
+                                            $("#myWizard").on("click", "#seccionNC", function(event) {
+                                                $("#seccionEncuestado").val('Sin especificar');
+                                            });
+
+                                            $("#myWizard").on("click", "#noticiasNC", function(event) {
+                                                $("#noticiasCual").val('Sin especificar');
+                                            });
+											
+											
+		$("#myWizard").on("submit", function(event) {
+											
+            event.preventDefault();
+            $('#messages').html("");
+            $('#coloniaEncuestado').val($.trim($('#coloniaEncuestado').val()));
+            $('#seccionEncuestado').val($.trim($('#seccionEncuestado').val()));
+			if ($('#seccionEncuestado').val().length < 3) {
+                alert("debe ingresar una sección válida");
+                $('#seccionEncuestado').focus();
+			} else {
+			
+			var inseguridad=$("input[name='inseguridad']:checked").val();
+			var victima=$("input[name='victima']:checked").val();
+			var socavon=$("input[name='socavon']:checked").val();
+			var seccion=$('#seccionEncuestado').val();
+			
+			
+			
+				//
+				 var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+				  var sqlite = new SQLite('estudiotendencias');
+				  sqlite.open(function(err) {
+					//alert('Connection opened');
+					if (err) throw err;
+					sqlite.query('CREATE TABLE IF NOT EXISTS Estudios (idsqlite, inseguridad, victima, socavon, seccion, estatus, idbd)', function(err, res) {
+					  if (err) throw err;
+					 // alert(JSON.stringify(res));
+					});
+					sqlite.query('Select count(idbd) as conteo from Estudios', [], function(err, res) {
+					  if (err) throw err;
+						var respuesta=res;
+						var total=res.rows[0].conteo;
+						total=total+1;
+							sqlite.query('INSERT INTO Estudios VALUES (?,?,?, ?, ?, ?, ?)', [total, inseguridad, victima, socavon, seccion, 'registered', 0], function(err, res) {
+								if (err) throw err;
+								navigator.notification.alert('Estudio registrado correctamente', "", 'Información', 'OK');
+								sqlite.query('Select count(idbd) as conteo from Estudios', [], function(err, res) {
+								  if (err) throw err;
+									var respuesta=res;
+									var total=res.rows[0].conteo;
+									//alert("Total "+total);
+									navigator.notification.alert('Estudio No. '+total, "", 'Información', 'OK');
+									sqlite.close(function(err) {
+									if (err) throw err;
+									var body = $("html, body");
+									body.stop().animate({scrollTop:0}, 900, 'swing', function() { 
+									   location.reload();
+									});
+									
+								  });
+								});
+							});
+					
+					 });
+				  });
+				
+
+            }
+        });
+		</script>
+	</body>
+</html>
