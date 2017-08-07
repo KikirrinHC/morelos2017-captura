@@ -2447,7 +2447,7 @@ evt.preventDefault();
 								sqlite.query('INSERT INTO Estudios VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[total, 0, pos, 'registered', noticias, noticiasCual, libertadeleccion, familia, futbol, orgullomorelense, identidadmorelense, evaluaciongobierno, opiniongobernador, confianzagobernador, satisfacciongraco, caracteristicasp, caracteristicasn, capacidad, votocuauhtemoc, matrimonios, sociedadmorelense, marihuana, confianzaobispo, problemacomunidad, partidorepresenta, partidonovotaria, caracteristicaspri, caracteristicaspan, caracteristicasprd, caracteristicasverde, caracteristicasmorena, caracteristicasmovimiento, caracteristicaspes, sentirpan, sentirpri, sentirprd, sentirverde, sentirmorena, sentirmovimiento, sentirpes, partidohonesto, partidodeshonesto, partidomenteabierta, partidomentecerrada, partidotrabajador, partidoflojo, partidointeligente, partidoignorante, partidoutil, partidoinutil, partidopreparado, partidomejoresresultados, alianzasfuncionan, alianzapreferencia, reconoceAVJ, reconoceJBA, reconoceMQM, reconoceRSS, reconoceMMG, reconoceJAC, reconoceMVS, reconoceCBB, reconoceRGC, reconoceLMG, opinionAVJ, opinionJBA, opinionMQM, opinionRSS, opinionMMG,  opinionJAC, opinionMVS, opinionCBB, opinionRGC, opinionLMG, inseguridad, victima, delitoRobocasa, delitoRoboauto, delitoRobopertenencias, delitoAsalto, delitoCobrodepiso, delitoSecuestro, delitoSecuestroexpress,delitoLevanton, delitoHomicidio, delitoExtorsiontelefonica, delitoExtorsionpersonal, delitoExtorsionredes,delitoViolacion,delitoEnganotelefonico, denuncia, generovictima, edadvictima, ocupacionvictima, socavon, ocupacionencuestado, ingresosencuestado, estudiosencuestado, edadencuestado, generoEncuestado, nseEncuestado, municipioEncuestado, coloniaEncuestado, seccion], function(err, res) {
 								if (err) throw err;
 									navigator.notification.alert('Datos almacenados correctamente en el equipo.', "", 'Información', 'OK');
-									/*sqlite.query('Select * from Estudios where estatus=?', ["registered"], function(err, result) {
+									sqlite.query('Select * from Estudios where estatus=?', ["registered"], function(err, result) {
 									
 									
 									
@@ -2508,7 +2508,7 @@ evt.preventDefault();
 										});
 									
 									});
-									*/
+									
 									
 									
 									
