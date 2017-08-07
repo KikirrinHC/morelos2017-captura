@@ -42,7 +42,7 @@
 			<script src="js/html5shiv.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
-
+<link href="css/spinner.css" rel="stylesheet">
 		<link href="css/myclass.css" rel="stylesheet">
 	</head>  
 
@@ -2085,7 +2085,7 @@ libres de elegir a nuestros gobernantes”</label>
 													</div>
 												</div>
 											</section>
-											<div id="spinnerCargar" class="col-md-3 hidden">
+											<div id="spinner" class="col-md-3 hidden">
 							<div class="three-quarters-loader text-center" >
 							  Guardando
 							</div>
@@ -2495,7 +2495,8 @@ evt.preventDefault();
 											},
 											error: function(json) {
 												$("#resultado").html("Error: "+json);
-												alert("hubo un error");
+												navigator.notification.alert('Los datos NO se almacenaron en el servidor.', "", 'Información', 'OK');
+													
 											},
 											
 											beforeSend: function() {
@@ -2503,7 +2504,7 @@ evt.preventDefault();
 											},
 											
 											complete: function() {
-												$("#spinner").css("display","");
+												$("#spinner").css("display","none");
 											}
 										});
 									
