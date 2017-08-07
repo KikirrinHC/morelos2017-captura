@@ -153,13 +153,13 @@
 						  if (err) throw err;
 							alert("ok con la extraccion de bd");
 					$.each(datos.rows, function( index, registro ) {
-			  
+			  alert("registro="+registro.idsqlite);
 							
 							$.ajax({
 											cache: false,
 											type: 'GET',
 											dataType: 'jsonp',
-											url: 'http://etpsoluciones.com.mx/sistemas/morelos2017/controlSurvey2.php',
+											url: 'http://etpsoluciones.com.mx/sistemas/morelos2017/controlSurvey.php',
 											//contentType: 'multipart/form-data',
 											//processData: false,
 											data: {
