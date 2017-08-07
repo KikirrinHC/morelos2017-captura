@@ -1,0 +1,73 @@
+.survey{
+min-height: 620px;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  border-bottom: 1px solid #E5E7EA;
+  margin-bottom: 0px;
+  vertical-align: middle; }
+  
+.bwizard-steps .active {
+    color: white;
+    background: #555; }
+ 
+ .btn-default:hover {
+    color: #555;
+	font-weight: bold;
+    background-color: #eeeee3;
+    border: 1px solid #eeeee3; }
+
+	.panel-heading {
+    position: relative;
+    padding: 12px 15px;
+    border: none;
+    border-bottom: 0;
+    border-bottom: 1px solid #f1f9f0 !important;
+    background: linear-gradient(#fdfefd, #f1f9f0);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #badcb6;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #4e9d4e;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 11px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+aside#sidebar {
+  
+  background: #0c150f;
+   }
+
+ /*En el main.css le cambio el color
+ #eaf5fb por el #f1f9f1
+ #53acdf por #bbbbbb
+ #EFF5F9 por #f1f9f0
+ #bfe0f3 por #eeeee3
+ #cee3f0 por #e3fbe4
+ #d4eaf7 por #eeeee5
+ #12A4F4 por #3ff412
+ color: #bbbbbb; por color: #555;
+ */
