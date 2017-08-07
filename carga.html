@@ -151,9 +151,9 @@
 						var total=res.rows[0].conteo;
 						sqlite.query('Select * from Estudios where estatus=?', ["registered"], function(err, result) {
 						  if (err) throw err;
-							alert("ok con la extraccion de bd");
+							//alert("ok con la extraccion de bd");
 					$.each(result.rows, function( index, registro ) {
-			  alert("registro="+registro.idsqlite);
+			  //alert("registro="+registro.idsqlite);
 							
 							$.ajax({
 											cache: false,
