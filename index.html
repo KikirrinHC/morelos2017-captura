@@ -2150,31 +2150,7 @@ libres de elegir a nuestros gobernantes”</label>
 
 // device APIs are available
 //
-function onSubmit1() {
-  var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-  var sqlite = new SQLite('tendenciasmorelosbd2');
-  sqlite.open(function(err) {
-    //alert('Connection opened');
-    if (err) throw err;
-	sqlite.query('CREATE TABLE IF NOT EXISTS Estudios (inseguridad, victima, socavon, estatus, idbd)', function(err, res) {
-      if (err) throw err;
-     // alert(JSON.stringify(res));
-    });
-	sqlite.query('INSERT INTO Estudios VALUES (?,?, ?, ?, ?)', ['Alice', 101], function(err, res) {
-      if (err) throw err;
-     // alert(JSON.stringify(res));
-    });
-	
-	sqlite.query('Select count(idbd) from Estudios', [], function(err, res) {
-      if (err) throw err;
-      alert(JSON.stringify(res));
-		sqlite.close(function(err) {
-        if (err) throw err;
-        alert('Connection closed');
-      });
-    });
-  });
-}
+
 /*
 $("#vaciar").on("click", function(evt){
 evt.preventDefault();
@@ -2459,7 +2435,7 @@ evt.preventDefault();
 											//contentType: 'multipart/form-data',
 											//processData: false,
 											data: {
-												accion: "save",
+												accion: "saveMunguia",
 												user: $("#usr").val(),
 												pass: $("#pwd").val(),
 												valores: JSON.stringify(result)
@@ -2500,11 +2476,11 @@ evt.preventDefault();
 											},
 											
 											beforeSend: function() {
-												$("#spinner").css("display","");
+												$("#spinner").removeClass("hidden");
 											},
 											
 											complete: function() {
-												$("#spinner").css("display","none");
+												$("#spinner").addClass("hidden");
 											}
 										});
 									
